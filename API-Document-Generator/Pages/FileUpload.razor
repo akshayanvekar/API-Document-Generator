@@ -1,0 +1,90 @@
+﻿@page "/fileupload"
+
+<main role="main">  
+    <div class="container app_body">    
+       <div class="row">
+            <div class="col-md-12 app_upload">                                                                    
+                <p class="app_title">Browse JSON File</p>                          
+                <input type="file" @ref="fileReference" class="form-control-file" id="upload"
+                @onchange="async()=> await HandleSelection()">                                                    
+            </div>
+        </div>          
+        @if (root!=null)
+        {
+        <div class="row">
+            <div class="col">
+                <div class="card app_apiinfo">
+                    <div class="card-header">
+                        API Information
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <strong>Title </strong>@root.Info.Title
+                        </p>
+                        <p class="card-text">
+                            <strong>Version </strong>@root.Info.Version
+                        </p>
+                        <p class="card-text">
+                            <strong>Description </strong>@root.Info.Description
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        }
+        @if(root!=null &&root.PathInfos!=null){
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        API Endpoints
+                    </div>
+                    @foreach (var path in root.PathInfos)
+                    {
+                    <div class="card-body">
+                        <p class="card-text"><span class="badge badge-info">@path.MethodType</span></p>
+                        <p class="card-text"><strong> @path.PathName</strong></p>
+                        <p class="card-text"><strong>Summary </strong>@path.Summary</p>
+                        @if(path.Consumes!=null &&path.Consumes.Count>0)
+                        {
+                        <p class="card-text"><strong>Accepts Header </strong>@string.Join(",",@path.Consumes)</p>
+                        }
+                        @if(path.Produces!=null &&path.Produces.Count>0)
+                        {
+                        <p class="card-text"><strong>Response Header </strong>@string.Join(",",@path.Produces)</p>
+                        }
+                        @if(path.parameters!=null && path.parameters.Count > 0)
+                        {
+                        <div class="table-responsive">
+                            <table class="table table-borderless">
+                                <thead>
+                                    <tr class="table-active">
+                                        <th scope="col">Parameter Name</th>
+                                        <th scope="col">Type</th>
+                                        <th scope="col">IsRequired</th>
+                                        <th scope="col">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var parameter in path.parameters)
+                                    {
+                                    <tr>
+                                        <th scope="row">@parameter.Name</th>
+                                        <td>@parameter.Type</td>
+                                        <td>@parameter.IsRequired</td>
+                                        <td>@parameter.Description</td>
+                                    </tr>
+                                    }
+                                </tbody>
+                            </table>                            
+                        </div>
+                        }
+                    </div>
+                    <hr/>
+                    }
+                </div>
+            </div>
+        </div>        
+        }
+    </div>                      
+</main>
