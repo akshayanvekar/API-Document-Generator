@@ -14,6 +14,8 @@ using Spire.Doc.Documents;
 using Spire.Doc.Fields;
 using System.Drawing;
 using API_Document_Generator.Pages.Services;
+using System.IO;
+using Microsoft.JSInterop;
 
 namespace API_Document_Generator.Pages
 {
@@ -23,6 +25,8 @@ namespace API_Document_Generator.Pages
         protected string status { get; set; }
         protected string url { get; set; }
         protected Root root { get; set; }
+        [Inject]
+        protected IJSRuntime jSRuntime { get; set; }
         protected async Task GetJson()
         {
             try
@@ -51,39 +55,25 @@ namespace API_Document_Generator.Pages
                 status = "Could not access entered URL. Please try again with valid one.";
             }
         }
+        protected async Task DownloadDocument()
+        {
+            status = $"Calling Download";
+            if (root != null)
+            {
+                ProcessDocument processDocument = new ProcessDocument();
+                MemoryStream stream = processDocument.GenerateDocument(root);
+                status = $"Loaded Stream {stream.Length}";
+                await FileUtil.SaveAs(jSRuntime, "Document.Docx", stream.ToArray());
+            }
+            else
+            {
+                status = $"Root is null ";
+            }
+        }
         private void GetDocument(JObject jsonObject)
         {
             root = new ProcessSchema().GetPath(jsonObject);
         }
 
-        protected void GetDocument(Root root)
-        {
-            Document document = new Document();
-
-            //Header and Footer
-            Section section = document.Sections[0];
-            HeaderFooter header = section.HeadersFooters.Header;
-            Paragraph HParagraph = header.AddParagraph();
-            TextRange HText = HParagraph.AppendText(root.Info.Title);
-
-            //Set Header Text Format
-            HText.CharacterFormat.FontName = "Algerian";
-            HText.CharacterFormat.FontSize = 15;
-            HText.CharacterFormat.TextColor = Color.RoyalBlue;
-
-            //Set Header Paragraph Format
-            HParagraph.Format.HorizontalAlignment = HorizontalAlignment.Left;
-            HParagraph.Format.Borders.Bottom.BorderType = BorderStyle.ThickThinMediumGap;
-            HParagraph.Format.Borders.Bottom.Space = 0.05f;
-            HParagraph.Format.Borders.Bottom.Color = Color.DarkGray;
-
-
-            HeaderFooter footer = section.HeadersFooters.Footer;
-
-
-
-            //document.SaveToFile("OperateWord.docx", FileFormat.Docx);
-
-        }
     }
 }

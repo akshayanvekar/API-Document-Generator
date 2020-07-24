@@ -17,7 +17,7 @@
                         <button class="btn btn-outline-secondary app_button" @onclick="GetJson" type="button" id="button-addon2">Load</button>
                     </div>
                         <div class="input-group-append">
-                        <button class="btn btn-outline-secondary app_button" type="button" id="button-addon2">Generate Document</button>
+                        <button class="btn btn-outline-secondary app_button" @onclick="async()=> await DownloadDocument()" type="button">Generate Document</button>
                     </div>
                 </div>
             </div>
@@ -39,6 +39,12 @@
                         </p>
                         <p class="card-text">
                             <strong>Description </strong>@root.Info.Description
+                        </p>
+                        <p class="card-text">
+                            <strong>Host </strong>@root.Info.Host
+                        </p>
+                        <p class="card-text">
+                            <strong>Base Path </strong>@root.Info.BaseUrl
                         </p>
                     </div>
                 </div>

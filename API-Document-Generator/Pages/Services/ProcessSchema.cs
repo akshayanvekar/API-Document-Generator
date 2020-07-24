@@ -16,7 +16,9 @@ namespace API_Document_Generator.Pages.Services
             {
                 Title = jsonObject["info"]["title"].ToString(),
                 Description = jsonObject["info"]["description"].ToString(),
-                Version = jsonObject["info"]["version"].ToString()
+                Version = jsonObject["info"]["version"].ToString(),
+                Host = jsonObject["host"].ToString(),
+                BaseUrl = jsonObject["basePath"].ToString(),
             };
             root.Info = info;
 

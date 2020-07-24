@@ -1,4 +1,4 @@
 ﻿<StaticWebAssets Version="1.0">
-  <ContentRoot BasePath="/" Path="C:\Users\HP\Desktop\VSCode_Projects\API-Document-Generator\API-Document-Generator\bin\Debug\netstandard2.1\wwwroot\" />
+  <ContentRoot BasePath="/" Path="C:\Users\HP\Documents\GitHub\API-Document-Generator\API-Document-Generator\bin\Debug\netstandard2.1\wwwroot\" />
   <ContentRoot BasePath="_content/Tewr.Blazor.FileReader" Path="C:\Users\HP\.nuget\packages\tewr.blazor.filereader\1.6.0.20166\build\..\staticwebassets\" />
 </StaticWebAssets>

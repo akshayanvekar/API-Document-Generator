@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\HP\\Desktop\\VSCode_Projects\\API-Document-Generator\\API-Document-Generator\\API-Document-Generator.csproj",
+  "FilePath": "c:\\Users\\HP\\Documents\\GitHub\\API-Document-Generator\\API-Document-Generator\\API-Document-Generator.csproj",
   "Configuration": {
     "ConfigurationName": "Default",
     "LanguageVersion": "3.0",
@@ -107,55 +107,6 @@
       },
       {
         "Kind": "Components.Component",
-        "Name": "API_Document_Generator.Pages.Contact",
-        "AssemblyName": "API-Document-Generator",
-        "Documentation": null,
-        "TagOutputHint": null,
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Contact",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "API_Document_Generator.Pages.Contact"
-        }
-      },
-      {
-        "Kind": "Components.Component",
-        "Name": "API_Document_Generator.Pages.Contact",
-        "AssemblyName": "API-Document-Generator",
-        "Documentation": null,
-        "TagOutputHint": null,
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "API_Document_Generator.Pages.Contact",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "API_Document_Generator.Pages.Contact",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "Kind": "Components.Component",
         "Name": "API_Document_Generator.Pages.Index",
         "AssemblyName": "API-Document-Generator",
         "Documentation": null,
@@ -200,6 +151,55 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "API_Document_Generator.Pages.Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "API_Document_Generator.Pages.Contact",
+        "AssemblyName": "API-Document-Generator",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Contact",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "API_Document_Generator.Pages.Contact"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "API_Document_Generator.Pages.Contact",
+        "AssemblyName": "API-Document-Generator",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "API_Document_Generator.Pages.Contact",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "API_Document_Generator.Pages.Contact",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -386,55 +386,6 @@
       },
       {
         "Kind": "Components.Component",
-        "Name": "API_Document_Generator.Shared.NavMenu",
-        "AssemblyName": "API-Document-Generator",
-        "Documentation": null,
-        "TagOutputHint": null,
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NavMenu",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "API_Document_Generator.Shared.NavMenu"
-        }
-      },
-      {
-        "Kind": "Components.Component",
-        "Name": "API_Document_Generator.Shared.NavMenu",
-        "AssemblyName": "API-Document-Generator",
-        "Documentation": null,
-        "TagOutputHint": null,
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "API_Document_Generator.Shared.NavMenu",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "API_Document_Generator.Shared.NavMenu",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "Kind": "Components.Component",
         "Name": "API_Document_Generator.Shared.SurveyPrompt",
         "AssemblyName": "API-Document-Generator",
         "Documentation": null,
@@ -509,6 +460,55 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "API_Document_Generator.Shared.SurveyPrompt",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "API_Document_Generator.Shared.NavMenu",
+        "AssemblyName": "API-Document-Generator",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NavMenu",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "API_Document_Generator.Shared.NavMenu"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "API_Document_Generator.Shared.NavMenu",
+        "AssemblyName": "API-Document-Generator",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "API_Document_Generator.Shared.NavMenu",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "API_Document_Generator.Shared.NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -16563,48 +16563,48 @@
   "RootNamespace": "API-Document-Generator",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\HP\\Desktop\\VSCode_Projects\\API-Document-Generator\\API-Document-Generator\\Shared\\SurveyPrompt.razor",
-      "TargetPath": "Shared\\SurveyPrompt.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\HP\\Desktop\\VSCode_Projects\\API-Document-Generator\\API-Document-Generator\\Pages\\FileUpload.razor",
-      "TargetPath": "Pages\\FileUpload.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\HP\\Desktop\\VSCode_Projects\\API-Document-Generator\\API-Document-Generator\\Pages\\Contact.razor",
-      "TargetPath": "Pages\\Contact.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\HP\\Desktop\\VSCode_Projects\\API-Document-Generator\\API-Document-Generator\\Pages\\Index.razor",
+      "FilePath": "c:\\Users\\HP\\Documents\\GitHub\\API-Document-Generator\\API-Document-Generator\\Pages\\Index.razor",
       "TargetPath": "Pages\\Index.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\HP\\Desktop\\VSCode_Projects\\API-Document-Generator\\API-Document-Generator\\App.razor",
+      "FilePath": "c:\\Users\\HP\\Documents\\GitHub\\API-Document-Generator\\API-Document-Generator\\Pages\\FileUpload.razor",
+      "TargetPath": "Pages\\FileUpload.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\HP\\Documents\\GitHub\\API-Document-Generator\\API-Document-Generator\\App.razor",
       "TargetPath": "App.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\HP\\Desktop\\VSCode_Projects\\API-Document-Generator\\API-Document-Generator\\Pages\\Resource.razor",
-      "TargetPath": "Pages\\Resource.razor",
+      "FilePath": "c:\\Users\\HP\\Documents\\GitHub\\API-Document-Generator\\API-Document-Generator\\Shared\\MainLayout.razor",
+      "TargetPath": "Shared\\MainLayout.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\HP\\Desktop\\VSCode_Projects\\API-Document-Generator\\API-Document-Generator\\_Imports.razor",
+      "FilePath": "c:\\Users\\HP\\Documents\\GitHub\\API-Document-Generator\\API-Document-Generator\\_Imports.razor",
       "TargetPath": "_Imports.razor",
       "FileKind": "componentImport"
     },
     {
-      "FilePath": "c:\\Users\\HP\\Desktop\\VSCode_Projects\\API-Document-Generator\\API-Document-Generator\\Shared\\NavMenu.razor",
-      "TargetPath": "Shared\\NavMenu.razor",
+      "FilePath": "c:\\Users\\HP\\Documents\\GitHub\\API-Document-Generator\\API-Document-Generator\\Pages\\Contact.razor",
+      "TargetPath": "Pages\\Contact.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\HP\\Desktop\\VSCode_Projects\\API-Document-Generator\\API-Document-Generator\\Shared\\MainLayout.razor",
-      "TargetPath": "Shared\\MainLayout.razor",
+      "FilePath": "c:\\Users\\HP\\Documents\\GitHub\\API-Document-Generator\\API-Document-Generator\\Shared\\SurveyPrompt.razor",
+      "TargetPath": "Shared\\SurveyPrompt.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\HP\\Documents\\GitHub\\API-Document-Generator\\API-Document-Generator\\Pages\\Resource.razor",
+      "TargetPath": "Pages\\Resource.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\HP\\Documents\\GitHub\\API-Document-Generator\\API-Document-Generator\\Shared\\NavMenu.razor",
+      "TargetPath": "Shared\\NavMenu.razor",
       "FileKind": "component"
     }
   ],
